@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cam App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="photobooth">
+      <div class="controls">
+        <button onClick="takePhoto()">Take Photo</button>
+      </div>
+
+      <canvas class="photo"></canvas>
+      <video class="player"></video>
+      <select id="photo-filter" class="select">
+        <option value="none">Normal</option>
+        <option value="grayscale(100%)">Grayscale</option>
+        <option value="sepia(100%)">Sepia</option>
+        <option value="invert(100%)">Invert</option>
+        <option value="hue-rotate(90deg)">Hue</option>
+        <option value="blur(10px)">Blur</option>
+        <option value="contrast(200%)">Contrast</option>
+      </select>
+      <button id="clear-button" class="btn btn-light">Clear</button>
+      <div class="strip"></div>
+    </div>
+
+    <audio class="snap" src="./snap.mp3" hidden></audio>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
