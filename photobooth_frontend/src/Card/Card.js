@@ -19,9 +19,7 @@ const Card = ({ date, time, imageUrl, ip, filter }) => {
             />
           </div>
           <div className="bg-white">
-            <p>IP address:87.56.135.294</p>
-            {/* delete the above hard coded ip adress or the whole p tag and uncomment the below p tag */}
-            {/* <p>IP address:{ip}</p> */}
+            <p>IP address:{ip}</p>
             <p>
               Photo captured on {date} at {time}
             </p>
